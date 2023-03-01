@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Dodo";
+  src: url("~@/assets/fonts/Dodo.eot");
+  src: url("~@/assets/fonts/Dodo.eot?#iefix") format("embedded-opentype"),
+  url("~@/assets/fonts/Dodo.woff2") format("woff2"), url("~@/assets/fonts/Dodo.woff") format("woff"),
+  url("~@/assets/fonts/Dodo.ttf") format("truetype")
+ }
+
+//---------------------------------------------fonts
+$font_1: 'Dodo', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+
+//---------------------------------------------fonts###
+
+//---------------------------------------------colors
+$white: #fff;
+$black: #000;
+
+$grey-light: rgb(243, 243, 247);
+$dark: rgb(92, 99, 112);
+
+$orange: rgb(255, 105, 0);
+$dark-orange: rgb(232, 97, 0);
+$yellow: #FFD200;
+$gradient: linear-gradient(90deg, #FFD363 0%, #FFB036 100%);
+
+
+
+// Variable margin
+
+
+
+
+
+
+
+
+
+//---------------------------------------------colors###
+
+//---------------------------------------------z-index
+$z-index: (
+	popup : 101,
+	header : 100,
+	footer : 100,
+	el: -1,
+);
+//---------------------------------------------z-index###
+
+//---------------------------------------------layout
+
+
+//---------------------------------------------layout###
+
+//---------------------------------------------global values
+
+//---------------------------------------------global values###
+
+//---------------------------------------------media points
+$point_1: 1200px;
+$point_2: 1024px;
+$point_3: 1023px;
+$point_4: 768px;
+$point_5: 640px;
+$point_6: 480px;
+$point_7: 375px;
+$point_8: 320px;
+//---------------------------------------------media points
+
+//---------------------------------------------forms
+
+
+$input_placeholder_color: $black;
