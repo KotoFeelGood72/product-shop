@@ -1,14 +1,15 @@
 <template>
     <div class="btn_w">
-      <button :type="type" class="btn btn-standart" :class="className" :id="id">
+      <button :type="type" class="btn btn-standart" :class="className" :id="id" v-on="$listeners">
         {{ name }}
+        <span v-if="dinamic" >{{dinamic}} ₽</span>
       </button>
     </div>
 </template>
 
 <script>
   export default {
-    props: ['type', 'id', 'name', 'className']
+    props: ['type', 'id', 'name', 'className', 'dinamic'],
   }
 </script>
 

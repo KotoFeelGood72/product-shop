@@ -54,7 +54,8 @@ mounted() {
         slidesPerView: '2',
       },
       768: {
-        slidesPerView: '4',
+        slidesPerView: '2.7',
+        spaceBetween: 15,
       },
       1200: {
         slidesPerView: '4.5',
@@ -81,6 +82,7 @@ beforeDestroy() {
   h2 {
     margin-bottom: 30px;
   }
+  padding-bottom: 0;
 }
 
 .popular-slider {
@@ -107,6 +109,10 @@ beforeDestroy() {
 
     h3 {
       font-size: 16px;
+      @include bp($point_2) {
+        font-size: 14px;
+        font-family: $font_1;
+      }
     }
   }
 }

@@ -60,4 +60,4 @@ class SlideStories {
 
 // new SlideStories('slide');
 
-console.log('Good')
+// console.log('Good')

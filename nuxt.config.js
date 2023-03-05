@@ -14,7 +14,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -23,7 +23,8 @@ export default {
   ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/storiesClass.js', ssr: false }
+    { src: '~/plugins/storiesClass.js', ssr: false },
+    {src: '~/plugins/headerFixed.js', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -1,5 +1,8 @@
 <template>
-  <nav>
+  <nav class="navigation-page">
+    <div class="nav-logo">
+      <img src="~/assets/img/favicon.png" alt="">
+    </div>
     <ul>
       <li v-for="(item, i) in menu" :key="'menu' + i"><NuxtLink :to="item.link">{{item.name}}</NuxtLink></li>
     </ul>
@@ -80,6 +83,19 @@
       }
     }
   }
+}
+
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  @include flex-center;
+  margin-right: 16px;
+}
+
+.navigation-page {
+  @include flex-start;
+  margin-left: -50px;
+  transition: all .3s ease;
 }
 
 </style>

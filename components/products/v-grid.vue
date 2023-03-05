@@ -76,5 +76,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   grid-gap: 60px 40px;
+  @include bp($point_2) {
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
 }
 </style>

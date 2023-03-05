@@ -54,6 +54,7 @@ export default {
         },
         768: {
           slidesPerView: '4',
+          spaceBetween: 20,
         },
         1200: {
           slidesPerView: '6',
@@ -92,6 +93,9 @@ export default {
   font-weight: 700;
   color: $orange;
   pointer-events: none;
+  @include bp($point_2) {
+    display: none;
+  }
   div {
     cursor: pointer;
     pointer-events: all;

@@ -17,4 +17,12 @@
       margin-bottom: 40px;
     }
   }
+
+  @media(max-width: 1024px) {
+    .section-title {
+      h2, h3, h4, h5, h6 {
+        font-size: 24px;
+      }
+  }
+}
 </style>

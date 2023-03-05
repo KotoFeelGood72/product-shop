@@ -43,7 +43,9 @@
 <script>
 import productsTitle from '../products/products-title';
   export default {
-    productsTitle
+    components: {
+      productsTitle
+    },
   }
 </script>
 
@@ -81,6 +83,12 @@ import productsTitle from '../products/products-title';
       &:not(:last-child) {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .delivery {
+    @include bp($point_2) {
+      display: none;
     }
   }
 </style>

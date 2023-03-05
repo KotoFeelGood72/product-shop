@@ -16,6 +16,7 @@
 
 <script>
   import vButton from '@/components/v-btn/v-button';
+  import 'bootstrap-icons/font/bootstrap-icons.css';
   export default {
     components: {
       vButton,
@@ -32,6 +33,12 @@
   }
   .prefooter_feedback {
     @include flex-space;
+    :deep(button) {
+      @include bp($point_2) {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
   }
   .prefooter_feedback_left {
     @include flex-start;
@@ -39,6 +46,9 @@
     h6 {
       color: $white;
       font-size: 18px;
+      @include bp($point_2) {
+        font-size: 14px;
+      }
     }
   }
   .prefooter_feedback_icon {
